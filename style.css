@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #b8e8ff;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #06216b;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #06216b;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #06216b;
+}
+
+.campo textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.pagamento {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pagamento label {
+    cursor: pointer;
+    background: #f7f7f7;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.pagamento input {
+    margin-right: 5px;
+}
+
+.total {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    animation: backwards;
+}
+
+.total strong {
+    color: #ffca28;
+    font-size: 23px;
+}
+
+.btn-pedido {
+    width: 100%;
+    padding: 17px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-pedido:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+}
+
+#mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sucesso {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .pagamento {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .total {
+        font-size: 16px;
+    }
+}
